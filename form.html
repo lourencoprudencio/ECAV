@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Inscrição - ECAV</title>
+
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="form.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="theme-toggle">
+            <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none; cursor: pointer;">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="cursor: pointer;">
+                <path d="M21.25 15.8C20.55 15.92 19.83 16 19 16C15.14 16 12 12.86 12 9C12 8.17 12.08 7.4 12.21 6.71C10.51 6.79 9 8.25 9 10C9 12.76 11.24 15 14 15C16.75 15 19 12.75 19 10C19 8.25 17.75 6.92 16 6.92C15.75 6.92 15.5 6.93 15.25 6.95C16.95 5.25 19.62 5.88 20.69 8.18C21.76 10.48 19.84 12.58 21.25 15.8Z"></path>
+            </svg>
+        </div>
+        <img src="logotipo.png" alt="Logotipo" class="logo">
+        <h1>Ficha de Inscrição de Aluno</h1>
+        <p>Preencha os campos abaixo para realizar a sua inscrição. Todos os campos são obrigatórios.</p>
+    </div>
+
+    <form id="registration-form">
+        <h2><strong>AVISOS</strong></h2>
+        <p><strong>Envio de documentos:</strong> secretaria@ecav.pt</p>
+        <p><strong>Pagamento via transferência:</strong> A conta está em nome de: Nova Geração – Escolas de Condução, Lda.</p>
+        <p><strong>IBAN:</strong> PT50.0033.0000.45547320486.05</p>
+        <p><strong>Emissão da licença de aprendizagem:</strong> Após conclusão definitiva do processo de inscrição e, não antes de 5 (cinco) dias úteis, aguardar receção via TM/SMS informação sobre o assunto.</p>
+        <p><strong>Alteração de dados:</strong> É responsabilidade do aluno informar sempre que existirem alterações aos seus dados pessoais</p>
+        <p><strong>Para menores de 18 anos:</strong> É necessário apresentar Declaração Paternal, cartão de cidadão dos pais e original da Narrativa Completa ou certidão narrativa ou código de acesso online da certidão de nascimento do candidato.</p>
+        <div class="form-group">
+            <label for="inscricao">Inscrição N.º</label>
+            <input type="text" id="inscricao" name="inscricao" placeholder="Número da inscrição" required>
+        </div>
+
+        <div class="form-group">
+            <label for="data">Data</label>
+            <input type="date" id="data" name="data" required>
+        </div>
+
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Insira o seu nome completo" required>
+        </div>
+
+        <div class="form-group">
+            <label for="morada">Morada</label>
+            <input type="text" id="morada" name="morada" placeholder="Ex: Alameda Conde de Oeiras, 95" required>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="localidade">Localidade</label>
+                <input type="text" id="localidade" name="localidade" placeholder="Ex: Oeiras" required>
+            </div>
+            <div class="form-group">
+                <label for="cod_postal">Código Postal</label>
+                <input type="text" id="cod_postal" name="cod_postal" placeholder="Ex: 2780-135" required>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label for="concelho">Concelho</label>
+                <input type="text" id="concelho" name="concelho" placeholder="Ex: Oeiras" required>
+            </div>
+            <div class="form-group">
+                <label for="distrito">Distrito</label>
+                <input type="text" id="distrito" name="distrito" placeholder="Ex: Lisboa" required>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Ex: 21 443 1107">
+            </div>
+            <div class="form-group">
+                <label for="telemovel">Telemóvel</label>
+                <input type="tel" id="telemovel" name="telemovel" placeholder="Ex: +351 919 393 008" required>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Ex: info@ecav.pt" required>
+        </div>        
+
+        <div class="form-group">
+            <label for="nif">NIF</label>
+            <input type="text" id="nif" name="nif" placeholder="Ex : 123 456 789" required>
+        </div>
+
+        <div class="form-group">
+            <label for="contrato">Contrato de Formação</label>
+            <input id="contrato" name="contrato" placeholder="Contrato de formação" required>
+        </div>
+
+        <div class="form-group">
+            <label for="contacto_ecav">Contacto da ECAV</label>
+            <input type="text" id="contacto_ecav" name="contacto_ecav" placeholder="Contacto da ECAV" required>
+        </div>
+        
+
+        <h3>Categoria Pretendida</h3>
+        <div class="form-checkboxes">
+            <label class="checkbox-label"><span>B  – Ligeiros (18 anos)</span><input type="checkbox" name="categoria" value="B"></label>
+            <label class="checkbox-label"><span>C  – Pesados de Mercadorias (21 anos)</span><input type="checkbox" name="categoria" value="C"></label>
+            <label class="checkbox-label"><span>A  – Motociclos (24 anos)</span><input type="checkbox" name="categoria" value="A"></label>
+            <label class="checkbox-label"><span>A2 – Motociclos (18 anos)</span><input type="checkbox" name="categoria" value="A2"></label>
+            <label class="checkbox-label"><span>A1 – Motociclos (16 anos)</span><input type="checkbox" name="categoria" value="A1"></label>
+            <label class="checkbox-label"><span>AM – Ciclomotores (14/15 anos)</span><input type="checkbox" name="categoria" value="AM"></label>
+        </div>
+
+        <h3>Já tem Teoria (código)?</h3>
+        <div class="form-checkboxes">
+    <label class="checkbox-label"><span>Sim</span><input type="radio" name="teoria_codigo" value="sim" required></label>
+    <label class="checkbox-label"><span>Não</span><input type="radio" name="teoria_codigo" value="nao" required></label>
+        </div>
+
+        <h3>Escolheu a Escola de Condução Armando Vitor devido a:</h3>
+<div class="form-checkboxes">
+    <label class="checkbox-label"><span>Publicidade</span><input type="checkbox" name="conheceu[]" value="publicidade"></label>
+    <label class="checkbox-label"><span>Recomendação</span><input type="checkbox" name="conheceu[]" value="recomendacao"></label>
+    <label class="checkbox-label"><span>Localização</span><input type="checkbox" name="conheceu[]" value="localizacao"></label>
+    <label class="checkbox-label"><span>Conhecimento</span><input type="checkbox" name="conheceu[]" value="conhecimento"></label>
+    <label class="checkbox-label"><span>Internet</span><input type="checkbox" name="conheceu[]" value="internet"></label>
+    <label class="checkbox-label"><span>Facebook</span><input type="checkbox" name="conheceu[]" value="facebook"></label>
+    <label class="checkbox-label"><span>Outra (indique)</span><input type="text" name="outra_conheceu" placeholder="Indique outra opção"></label>
+</div>
+
+
+        <h3>Assinatura</h3>
+        <canvas id="signature-pad"></canvas>
+        <div class="buttons">
+            <button type="button" class="clear-signature" id="clear-signature">Limpar Assinatura</button>
+        </div>
+
+        <div style="font-size: 12px; margin-top: 20px; color: var(--text-color);">
+            Os dados recolhidos destinam-se a ser processados automaticamente com o objectivo desta empresa ou empresa(s) do grupo lhe poderem dar informações sobre a(s) empresa(s), produto(s) ou serviço(s) que comercializa(m). Tem o direito de aceder aos seus dados e solicitar a sua verificação e/ou eliminação.<br>
+            Com o fim exclusivo de providenciar informação às autoridades e/ou entidades oficiais, desde já, declaro que concedo expressa autorização à ECAV - ESCOLA DE CONDUÇÃO ARMANDO VITOR para que capte e disponibilize as imagens do sistema interno de vídeo vigilância.<br>
+            ECAVMOSC01 - FICHA DE INSCRIÇÃO ALUNO V19.doc MAR’24
+        </div>
+
+        <div class="submit-section">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</div>
+
+<!-- Link do JavaScript -->
+<script src="form.js"></script>
+
+</body>
+</html>
