@@ -173,3 +173,36 @@ body.dark-mode button:hover {
 body.dark-mode #signature-pad {
     border: 1px solid #ccc;
 }
+/* Estilos para a mensagem de sucesso */
+.success-message {
+    display: none; /* Inicialmente escondido */
+    background-color: rgba(0, 208, 132, 0.9);
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+    text-align: center;
+    animation: fadeIn 1s forwards; /* Animação de fadeIn */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
